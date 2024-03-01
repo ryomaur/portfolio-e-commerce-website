@@ -3,7 +3,7 @@ import { Inter } from "next/font/google";
 import { Noto_Sans_JP } from "next/font/google";
 import { Roboto_Mono } from "next/font/google";
 import "./globals.css";
-import Nav from "@/components/Nav";
+import Navbar from "@/components/Navbar";
 
 const inter = Inter({ subsets: ["latin"], variable: "--inter" });
 const notoSansJP = Noto_Sans_JP({
@@ -30,7 +30,7 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${notoSansJP.variable} ${robotoMono.variable} bg-background`}
       >
-        <Nav />
+        <Navbar />
         {children}
       </body>
     </html>
